@@ -1,0 +1,688 @@
+object frmGrade: TfrmGrade
+  Left = 143
+  Top = 36
+  BorderIcons = []
+  BorderStyle = bsNone
+  ClientHeight = 657
+  ClientWidth = 830
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  OldCreateOrder = False
+  Position = poDefault
+  Visible = True
+  WindowState = wsMaximized
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 830
+    Height = 657
+    Align = alClient
+    TabOrder = 0
+    object Label21: TLabel
+      Left = 250
+      Top = 55
+      Width = 29
+      Height = 14
+      Caption = 'Serie'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label22: TLabel
+      Left = 7
+      Top = 55
+      Width = 83
+      Height = 14
+      Caption = 'Nivel de Ensino'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label6: TLabel
+      Left = 624
+      Top = 55
+      Width = 22
+      Height = 14
+      Caption = 'Ano'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label1: TLabel
+      Left = 7
+      Top = 213
+      Width = 124
+      Height = 14
+      Caption = 'Rela'#231#227'o de Disciplinas:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 7
+      Top = 138
+      Width = 83
+      Height = 14
+      Caption = 'Cod. Disciplina:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 97
+      Top = 138
+      Width = 55
+      Height = 14
+      Caption = 'Disciplina:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object cbSerie: TComboBox
+      Left = 250
+      Top = 75
+      Width = 371
+      Height = 23
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = []
+      ItemHeight = 15
+      ParentFont = False
+      TabOrder = 1
+      OnEnter = cbSerieEnter
+      OnKeyPress = cbSerieKeyPress
+    end
+    object Panel4: TPanel
+      Left = 1
+      Top = 1
+      Width = 828
+      Height = 30
+      Align = alTop
+      Caption = 'Cadastro de Grade'
+      Color = clGreen
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -16
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 6
+    end
+    object Panel3: TPanel
+      Left = 1
+      Top = 31
+      Width = 828
+      Height = 6
+      Align = alTop
+      Color = clRed
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 7
+    end
+    object cbNivel: TComboBox
+      Left = 7
+      Top = 75
+      Width = 241
+      Height = 23
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = []
+      ItemHeight = 15
+      ParentFont = False
+      TabOrder = 0
+      OnEnter = cbNivelEnter
+      OnKeyPress = cbSerieKeyPress
+    end
+    object cbAno: TComboBox
+      Left = 624
+      Top = 75
+      Width = 105
+      Height = 22
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ItemHeight = 14
+      ParentFont = False
+      TabOrder = 2
+      Text = '2008'
+      OnKeyPress = cbSerieKeyPress
+      Items.Strings = (
+        ''
+        '2000'
+        '2001'
+        '2002'
+        '2003'
+        '2004'
+        '2005'
+        '2006'
+        '2007'
+        '2008'
+        '2009'
+        '2010')
+    end
+    object Panel2: TPanel
+      Left = 742
+      Top = 37
+      Width = 87
+      Height = 619
+      Align = alRight
+      BevelInner = bvLowered
+      TabOrder = 8
+      object spNovo: TSpeedButton
+        Left = 5
+        Top = 9
+        Width = 75
+        Height = 50
+        Hint = 'Insert'
+        Caption = '&Novo'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF0000FFFF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF0000FFFF00FF00FF0000FF
+          FF0000FFFF00FF00FF0084848400848484008484840000FFFF0000FFFF008484
+          840084848400848484008484840000FFFF0000FFFF00FF00FF00FF00FF00FF00
+          FF0000FFFF000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000FFFF00FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF000000000084848400FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF000000000084848400FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF000000000084848400FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF000000000084848400FF00FF00FF00FF0000FFFF0000FF
+          FF0000FFFF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF000000000000FFFF0000FFFF00FF00FF00FF00FF0000FF
+          FF0000FFFF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF000000000000FFFF0000FFFF0000FFFF00FF00FF00FF00
+          FF00FF00FF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00000000000000
+          0000000000000000000000000000FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF0000000000FFFF
+          FF00FFFFFF0000000000FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF0000000000FFFF
+          FF000000000000FFFF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00000000000000
+          0000FF00FF0000FFFF0000FFFF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF0000FFFF00000000000000000000000000000000000000000000000000FF00
+          FF00FF00FF00FF00FF0000FFFF0000FFFF00FF00FF00FF00FF00FF00FF0000FF
+          FF0000FFFF00FF00FF00FF00FF00FF00FF00FF00FF0000FFFF0000FFFF00FF00
+          FF00FF00FF00FF00FF00FF00FF0000FFFF0000FFFF00FF00FF0000FFFF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF0000FFFF00FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF0000FFFF00}
+        Layout = blGlyphTop
+        ParentFont = False
+        OnClick = spNovoClick
+      end
+      object spExcluir: TSpeedButton
+        Left = 5
+        Top = 62
+        Width = 75
+        Height = 50
+        Hint = 'Delete'
+        Caption = '&Excluir'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000FF00FF00FF00
+          FF00FF00FF000000000000000000000000000000000000000000000000000000
+          00000000000000000000FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF0000000000FFFFFF00848484008484840084848400848484008484
+          84008484840000000000FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF0000000000FFFFFF00FFFFFF0000000000C6C6C60000000000C6C6C6000000
+          0000848484008484840000000000FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF0000000000FFFFFF00FFFFFF0000000000C6C6C60000000000848484000000
+          0000848484008484840000000000FF00FF00FF00FF00FF00FF00FF00FF000000
+          0000FFFFFF00FFFFFF008484840084848400C6C6C60000000000C6C6C6008484
+          840000000000848484008484840000000000FF00FF00FF00FF00FF00FF000000
+          0000FFFFFF00FFFFFF0000000000C6C6C600C6C6C6000000000084848400C6C6
+          C60000000000848484008484840000000000FF00FF0000000000000000000000
+          0000FFFFFF00FFFFFF0000000000C6C6C600C6C6C60000000000C6C6C6008484
+          84000000000084848400848484000000000000000000FF00FF00FF00FF000000
+          0000FFFFFF00FFFFFF008484840084848400C6C6C6000000000084848400C6C6
+          C60000000000848484008484840000000000FF00FF00FF00FF00FF00FF00FF00
+          FF0000000000FFFFFF00FFFFFF0000000000C6C6C60000000000C6C6C6000000
+          0000848484008484840000000000FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF0000000000FFFFFF00FFFFFF0000000000C6C6C60000000000848484000000
+          0000848484008484840000000000FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF0000000000FFFFFF00C6C6C600C6C6C600C6C6C60084848400848484008484
+          8400848484008484840000000000FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00000000008484840084848400848484000000
+          0000FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00000000000000000000000000000000000000
+          0000FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00}
+        Layout = blGlyphTop
+        ParentFont = False
+        OnClick = spExcluirClick
+      end
+      object spSalvar: TSpeedButton
+        Left = 5
+        Top = 116
+        Width = 75
+        Height = 50
+        Hint = 'Post'
+        Caption = '&Registrar'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00000000000000000000000000000000000000000000000000000000000000
+          00000000000000000000000000000000000000000000FF00FF00FF00FF000000
+          0000008484000084840000000000000000000000000000000000000000000000
+          0000C6C6C600C6C6C600000000000084840000000000FF00FF00FF00FF000000
+          0000008484000084840000000000000000000000000000000000000000000000
+          0000C6C6C600C6C6C600000000000084840000000000FF00FF00FF00FF000000
+          0000008484000084840000000000000000000000000000000000000000000000
+          0000C6C6C600C6C6C600000000000084840000000000FF00FF00FF00FF000000
+          0000008484000084840000000000000000000000000000000000000000000000
+          00000000000000000000000000000084840000000000FF00FF00FF00FF000000
+          0000008484000084840000848400008484000084840000848400008484000084
+          84000084840000848400008484000084840000000000FF00FF00FF00FF000000
+          0000008484000084840000000000000000000000000000000000000000000000
+          00000000000000000000008484000084840000000000FF00FF00FF00FF000000
+          00000084840000000000C6C6C600C6C6C600C6C6C600C6C6C600C6C6C600C6C6
+          C600C6C6C600C6C6C600000000000084840000000000FF00FF00FF00FF000000
+          00000084840000000000C6C6C600C6C6C600C6C6C600C6C6C600C6C6C600C6C6
+          C600C6C6C600C6C6C600000000000084840000000000FF00FF00FF00FF000000
+          00000084840000000000C6C6C600C6C6C600C6C6C600C6C6C600C6C6C600C6C6
+          C600C6C6C600C6C6C600000000000084840000000000FF00FF00FF00FF000000
+          00000084840000000000C6C6C600C6C6C600C6C6C600C6C6C600C6C6C600C6C6
+          C600C6C6C600C6C6C600000000000084840000000000FF00FF00FF00FF000000
+          00000084840000000000C6C6C600C6C6C600C6C6C600C6C6C600C6C6C600C6C6
+          C600C6C6C600C6C6C600000000000000000000000000FF00FF00FF00FF000000
+          00000084840000000000C6C6C600C6C6C600C6C6C600C6C6C600C6C6C600C6C6
+          C600C6C6C600C6C6C60000000000C6C6C60000000000FF00FF00FF00FF000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          00000000000000000000000000000000000000000000FF00FF00FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00}
+        Layout = blGlyphTop
+        ParentFont = False
+        OnClick = spSalvarClick
+      end
+      object spAlterar: TSpeedButton
+        Left = 5
+        Top = 171
+        Width = 75
+        Height = 50
+        Caption = 'Alterar'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          00000000000000000000FF00FF00FF00FF00FF00FF00FF00FF0000000000FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF0000000000FF00FF00FF00FF00FF00FF00FF00FF0000000000FFFF
+          FF000000000000000000FFFFFF00000000000000000000000000000000000000
+          0000FFFFFF0000000000FF00FF00FF00FF00FF00FF00FF00FF0000000000FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF0000000000FF00FF00FF00FF00FF00FF00FF00FF0000000000FFFF
+          FF000000000000000000FFFFFF00000000000000000000000000000000000000
+          0000FFFFFF0000000000FF00FF00FF00FF00FF00FF00FF00FF0000000000FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF0000000000FF00FF00FF00FF00FF00FF00FF00FF0000000000FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0000000000FFFF
+          FF00FFFFFF0000000000FF00FF00FF00FF00FF00FF00FF00FF0000000000FFFF
+          FF000000000000000000FFFFFF00FFFFFF00FFFFFF0000000000C6C6C6000000
+          0000FFFFFF0000000000FF00FF00FF00FF00FF00FF00FF00FF0000000000FFFF
+          FF0000000000C6C6C60000000000FFFFFF0000000000C6C6C60000000000C6C6
+          C600000000000000000000000000FF00FF00840000008400000000000000FFFF
+          FF00FFFFFF0000000000C6C6C60000000000C6C6C60000000000C6C6C6000000
+          0000C6C6C600C6C6C600C6C6C600000000008400000084000000000000000000
+          0000000000000000000000000000C6C6C60000000000C6C6C60000000000C6C6
+          C600C6C6C600C6C6C600C6C6C600C6C6C6008400000084000000FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF0000000000C6C6C60000000000C6C6C600C6C6
+          C600C6C6C600C6C6C600C6C6C600C6C6C6008400000084000000FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF0000000000C6C6C600C6C6C600C6C6
+          C600C6C6C600C6C6C600C6C6C600000000008400000084000000FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF0000000000000000000000
+          0000000000000000000000000000FF00FF008400000084000000FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00}
+        Layout = blGlyphTop
+        ParentFont = False
+        OnClick = spAlterarClick
+      end
+      object spCancelar: TSpeedButton
+        Left = 5
+        Top = 226
+        Width = 75
+        Height = 50
+        Hint = 'Ir para...'
+        Caption = '&Cancelar'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        Glyph.Data = {
+          76010000424D7601000000000000760000002800000020000000100000000100
+          04000000000000010000130B0000130B00001000000000000000000000000000
+          800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF0033333333B333
+          333B33F333337F3333373B33333BB33333B337FF33377F33337F3BB3333BB333
+          3BB3377FF3377F33377333BB777BB777BB333377FFF77FFF7733330000000000
+          B3333377777777777333330FFFFFFFF03333337F3FF3FFF7F333330F00F000F0
+          33333F7F77377737FFFFBB0FFF8FFFF0BBB3777F3F33FFF7777F3B0F08700000
+          000B377F73F7777777773308880FFFFFF033337F377333333733330807FFFFF8
+          033333737FFFFFFF7F33333000000000B3333337777777777FF333BB333BB333
+          BB33337733377F3377FF3BB3333BB3333BB3377333377F33377F3B33333BB333
+          33B33733333773333373B333333B3333333B7333333733333337}
+        Layout = blGlyphTop
+        NumGlyphs = 2
+        ParentFont = False
+        OnClick = spCancelarClick
+      end
+      object spFechar: TSpeedButton
+        Left = 6
+        Top = 395
+        Width = 75
+        Height = 50
+        Caption = '&Fechar'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        Glyph.Data = {
+          76010000424D7601000000000000760000002800000020000000100000000100
+          04000000000000010000120B0000120B00001000000000000000000000000000
+          800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00330000000000
+          03333377777777777F333301BBBBBBBB033333773F3333337F3333011BBBBBBB
+          0333337F73F333337F33330111BBBBBB0333337F373F33337F333301110BBBBB
+          0333337F337F33337F333301110BBBBB0333337F337F33337F333301110BBBBB
+          0333337F337F33337F333301110BBBBB0333337F337F33337F333301110BBBBB
+          0333337F337F33337F333301110BBBBB0333337F337FF3337F33330111B0BBBB
+          0333337F337733337F333301110BBBBB0333337F337F33337F333301110BBBBB
+          0333337F3F7F33337F333301E10BBBBB0333337F7F7F33337F333301EE0BBBBB
+          0333337F777FFFFF7F3333000000000003333377777777777333}
+        Layout = blGlyphTop
+        NumGlyphs = 2
+        ParentFont = False
+        OnClick = spFecharClick
+      end
+      object spConsultar: TSpeedButton
+        Left = 6
+        Top = 314
+        Width = 75
+        Height = 50
+        Caption = 'Consultar'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        Glyph.Data = {
+          76010000424D7601000000000000760000002800000020000000100000000100
+          04000000000000010000120B0000120B00001000000000000000000000000000
+          800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333303333
+          333333333337FF3333333333330003333333333333777F333333333333080333
+          3333333F33777FF33F3333B33B000B33B3333373F777773F7333333BBB0B0BBB
+          33333337737F7F77F333333BBB0F0BBB33333337337373F73F3333BBB0F7F0BB
+          B333337F3737F73F7F3333BB0FB7BF0BB3333F737F37F37F73FFBBBB0BF7FB0B
+          BBB3773F7F37337F377333BB0FBFBF0BB333337F73F333737F3333BBB0FBF0BB
+          B3333373F73FF7337333333BBB000BBB33333337FF777337F333333BBBBBBBBB
+          3333333773FF3F773F3333B33BBBBB33B33333733773773373333333333B3333
+          333333333337F33333333333333B333333333333333733333333}
+        Layout = blGlyphTop
+        NumGlyphs = 2
+        ParentFont = False
+        OnClick = spConsultarClick
+      end
+    end
+    object DBGrid1: TDBGrid
+      Left = 7
+      Top = 247
+      Width = 730
+      Height = 400
+      DataSource = dsGrade
+      Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection]
+      TabOrder = 9
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+      TitleFont.Style = []
+      OnCellClick = DBGrid1CellClick
+      Columns = <
+        item
+          Color = 11599871
+          Expanded = False
+          FieldName = 'Disciplina'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clWindowText
+          Title.Font.Height = -11
+          Title.Font.Name = 'Arial'
+          Title.Font.Style = [fsBold]
+          Width = 436
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'CargaHoraria'
+          Title.Alignment = taCenter
+          Title.Caption = 'Carga Hor'#225'ria'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clWindowText
+          Title.Font.Height = -11
+          Title.Font.Name = 'Arial'
+          Title.Font.Style = [fsBold]
+          Width = 88
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'Ano'
+          Title.Alignment = taCenter
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clWindowText
+          Title.Font.Height = -11
+          Title.Font.Name = 'Arial'
+          Title.Font.Style = [fsBold]
+          Width = 71
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'Situacao'
+          Title.Alignment = taCenter
+          Title.Caption = 'Situa'#231#227'o'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clWindowText
+          Title.Font.Height = -11
+          Title.Font.Name = 'Arial'
+          Title.Font.Style = [fsBold]
+          Width = 98
+          Visible = True
+        end>
+    end
+    object edCodDisciplina: TEdit
+      Left = 7
+      Top = 158
+      Width = 84
+      Height = 23
+      BorderStyle = bsNone
+      CharCase = ecUpperCase
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 3
+      OnKeyPress = cbSerieKeyPress
+    end
+    object edDisciplina: TEdit
+      Left = 97
+      Top = 158
+      Width = 520
+      Height = 23
+      BorderStyle = bsNone
+      CharCase = ecUpperCase
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 4
+      OnKeyPress = cbSerieKeyPress
+    end
+    object rdgImprimir: TRadioGroup
+      Left = 624
+      Top = 144
+      Width = 105
+      Height = 65
+      Caption = 'Imprimir....'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ItemIndex = 0
+      Items.Strings = (
+        'SIM'
+        'NAO')
+      ParentFont = False
+      TabOrder = 5
+    end
+  end
+  object dsGrade: TDataSource
+    DataSet = QyGrade
+    Left = 488
+  end
+  object QyGrade: TQuery
+    DatabaseName = 'BDESisceb'
+    SQL.Strings = (
+      'Select * from Vw_Grades')
+    Left = 520
+    object QyGradeDisciplina: TStringField
+      FieldName = 'Disciplina'
+      Origin = 'BDACADEMICO.Vw_Grades.Disciplina'
+      Size = 30
+    end
+    object QyGradeCodDisciplina: TIntegerField
+      FieldName = 'CodDisciplina'
+      Origin = 'BDACADEMICO.Vw_Grades.CodDisciplina'
+    end
+    object QyGradeAno: TIntegerField
+      FieldName = 'Ano'
+      Origin = 'BDACADEMICO.Vw_Grades.Ano'
+    end
+    object QyGradeSituacao: TStringField
+      FieldName = 'Situacao'
+      Origin = 'BDACADEMICO.Vw_Grades.Situacao'
+      FixedChar = True
+      Size = 1
+    end
+    object QyGradeCargaHoraria: TFloatField
+      FieldName = 'CargaHoraria'
+      Origin = 'BDEXPOENTE.Vw_Grades.CargaHoraria'
+    end
+    object QyGradeCodNivel: TIntegerField
+      FieldName = 'CodNivel'
+      Origin = 'BDEXPOENTE.Vw_Grades.CodNivel'
+    end
+    object QyGradeSerie: TStringField
+      FieldName = 'Serie'
+      Origin = 'BDEXPOENTE.Vw_Grades.Serie'
+      Size = 50
+    end
+    object QyGradeNivel: TStringField
+      FieldName = 'Nivel'
+      Origin = 'BDEXPOENTE.Vw_Grades.Nivel'
+      Size = 50
+    end
+    object QyGradeCodSerie: TIntegerField
+      FieldName = 'CodSerie'
+      Origin = 'BDEXPOENTE.Vw_Grades.CodSerie'
+    end
+  end
+end
