@@ -1,12 +1,12 @@
 object frmInterface: TfrmInterface
-  Left = 29
-  Top = 202
+  Left = 285
+  Top = 89
   BorderStyle = bsSingle
   Caption = 
     'Sistema '#218'nico de Ensino B'#225'sico                                  ' +
     '                 COL'#201'GIO OBJETIVO ITABAIANA -  vers'#227'o 2.0'
-  ClientHeight = 692
-  ClientWidth = 1366
+  ClientHeight = 672
+  ClientWidth = 1034
   Color = clBtnFace
   Font.Charset = ANSI_CHARSET
   Font.Color = clWindowText
@@ -51,16 +51,16 @@ object frmInterface: TfrmInterface
   object Shape1: TShape
     Left = 0
     Top = 0
-    Width = 1366
+    Width = 1034
     Height = 2
     Align = alTop
     Pen.Color = clBlue
   end
   object Shape3: TShape
-    Left = 1364
+    Left = 1032
     Top = 2
     Width = 2
-    Height = 671
+    Height = 651
     Align = alRight
     Pen.Color = clBlue
   end
@@ -68,15 +68,15 @@ object frmInterface: TfrmInterface
     Left = 157
     Top = 2
     Width = 2
-    Height = 671
+    Height = 651
     Align = alLeft
     Pen.Color = clBlue
   end
   object Image11: TImage
     Left = 159
     Top = 2
-    Width = 1205
-    Height = 671
+    Width = 873
+    Height = 651
     Align = alClient
     Center = True
     Picture.Data = {
@@ -883,8 +883,8 @@ object frmInterface: TfrmInterface
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Top = 673
-    Width = 1366
+    Top = 653
+    Width = 1034
     Height = 19
     Panels = <
       item
@@ -909,7 +909,7 @@ object frmInterface: TfrmInterface
     Left = 0
     Top = 2
     Width = 157
-    Height = 671
+    Height = 651
     Align = alLeft
     Bands = <
       item
@@ -918,7 +918,7 @@ object frmInterface: TfrmInterface
         MinHeight = 149
         ParentColor = False
         Text = 'CADASTRO'
-        Width = 601
+        Width = 583
       end
       item
         Break = False
@@ -927,7 +927,7 @@ object frmInterface: TfrmInterface
         MinHeight = 151
         ParentColor = False
         Text = 'CAIXA'
-        Width = 31
+        Width = 29
       end
       item
         Break = False
@@ -951,7 +951,7 @@ object frmInterface: TfrmInterface
       Left = 2
       Top = 29
       Width = 149
-      Height = 568
+      Height = 550
       Align = alClient
       AutoScroll = True
       Color = 14286847
@@ -1458,7 +1458,7 @@ object frmInterface: TfrmInterface
     end
     object PageScroller4: TPageScroller
       Left = 0
-      Top = 665
+      Top = 645
       Width = 153
       Height = 2
       Color = 14286847
@@ -1622,7 +1622,7 @@ object frmInterface: TfrmInterface
     end
     object PageScroller6: TPageScroller
       Left = 1
-      Top = 632
+      Top = 614
       Width = 151
       Height = 0
       Align = alClient

@@ -1,6 +1,6 @@
 object frmNotas_Colegio: TfrmNotas_Colegio
-  Left = 65
-  Top = 84
+  Left = 291
+  Top = 289
   BorderIcons = []
   BorderStyle = bsNone
   ClientHeight = 533

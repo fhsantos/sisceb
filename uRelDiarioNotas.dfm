@@ -1,6 +1,6 @@
 object frmRelDiarioNotas: TfrmRelDiarioNotas
-  Left = 243
-  Top = 118
+  Left = 378
+  Top = 324
   Width = 1036
   Height = 630
   Color = clBtnFace
@@ -382,7 +382,7 @@ object frmRelDiarioNotas: TfrmRelDiarioNotas
     end
   end
   object QuickRep1: TQuickRep
-    Left = -201
+    Left = -1
     Top = 0
     Width = 1123
     Height = 794
@@ -441,7 +441,7 @@ object frmRelDiarioNotas: TfrmRelDiarioNotas
       ForceNewColumn = False
       ForceNewPage = False
       Size.Values = (
-        494.770833333333300000
+        494.770833333333400000
         2770.187500000000000000)
       BandType = rbColumnHeader
       object QRShape16: TQRShape
@@ -525,7 +525,7 @@ object frmRelDiarioNotas: TfrmRelDiarioNotas
         Frame.DrawLeft = False
         Frame.DrawRight = False
         Size.Values = (
-          34.395833333333330000
+          34.395833333333340000
           2550.583333333333000000
           132.291666666666700000
           185.208333333333300000)
@@ -555,9 +555,9 @@ object frmRelDiarioNotas: TfrmRelDiarioNotas
         Frame.DrawLeft = False
         Frame.DrawRight = False
         Size.Values = (
-          34.395833333333330000
+          34.395833333333340000
           2587.625000000000000000
-          84.666666666666670000
+          84.666666666666680000
           148.166666666666700000)
         Alignment = taRightJustify
         AlignToBand = False
@@ -585,7 +585,7 @@ object frmRelDiarioNotas: TfrmRelDiarioNotas
         Frame.DrawLeft = False
         Frame.DrawRight = False
         Size.Values = (
-          34.395833333333330000
+          34.395833333333340000
           2587.625000000000000000
           37.041666666666670000
           148.166666666666700000)
@@ -649,7 +649,7 @@ object frmRelDiarioNotas: TfrmRelDiarioNotas
           44.979166666666670000
           203.729166666666700000
           254.000000000000000000
-          312.208333333333300000)
+          312.208333333333400000)
         Alignment = taLeftJustify
         AlignToBand = False
         AutoSize = True
@@ -710,7 +710,7 @@ object frmRelDiarioNotas: TfrmRelDiarioNotas
         Frame.DrawRight = False
         Size.Values = (
           44.979166666666670000
-          534.458333333333300000
+          534.458333333333400000
           254.000000000000000000
           103.187500000000000000)
         Alignment = taRightJustify
@@ -741,7 +741,7 @@ object frmRelDiarioNotas: TfrmRelDiarioNotas
         Frame.DrawRight = False
         Size.Values = (
           44.979166666666670000
-          653.520833333333300000
+          653.520833333333400000
           254.000000000000000000
           243.416666666666700000)
         Alignment = taLeftJustify
@@ -932,7 +932,7 @@ object frmRelDiarioNotas: TfrmRelDiarioNotas
           79.375000000000000000
           1100.666666666667000000
           100.541666666666700000
-          566.208333333333300000)
+          566.208333333333400000)
         Alignment = taCenter
         AlignToBand = True
         AutoSize = True
@@ -997,7 +997,7 @@ object frmRelDiarioNotas: TfrmRelDiarioNotas
         Frame.DrawRight = False
         Size.Values = (
           44.979166666666670000
-          859.895833333333300000
+          859.895833333333400000
           370.416666666666700000
           113.770833333333300000)
         Alignment = taLeftJustify
@@ -1059,7 +1059,7 @@ object frmRelDiarioNotas: TfrmRelDiarioNotas
         Frame.DrawRight = False
         Size.Values = (
           44.979166666666670000
-          989.541666666666700000
+          989.541666666666800000
           370.416666666666700000
           113.770833333333300000)
         Alignment = taLeftJustify
@@ -1498,7 +1498,7 @@ object frmRelDiarioNotas: TfrmRelDiarioNotas
           50.270833333333330000
           433.916666666666700000
           21.166666666666670000
-          470.958333333333300000)
+          470.958333333333400000)
         Alignment = taLeftJustify
         AlignToBand = False
         AutoSize = True
@@ -1529,7 +1529,7 @@ object frmRelDiarioNotas: TfrmRelDiarioNotas
           50.270833333333330000
           433.916666666666700000
           71.437500000000000000
-          439.208333333333300000)
+          439.208333333333400000)
         Alignment = taLeftJustify
         AlignToBand = False
         AutoSize = True
@@ -2704,10 +2704,10 @@ object frmRelDiarioNotas: TfrmRelDiarioNotas
         Frame.DrawLeft = False
         Frame.DrawRight = False
         Size.Values = (
-          42.333333333333330000
+          42.333333333333340000
           1733.020833333333000000
           23.812500000000000000
-          854.604166666666700000)
+          854.604166666666800000)
         Alignment = taRightJustify
         AlignToBand = False
         AutoSize = True
@@ -2735,10 +2735,10 @@ object frmRelDiarioNotas: TfrmRelDiarioNotas
         Frame.DrawLeft = False
         Frame.DrawRight = False
         Size.Values = (
-          42.333333333333330000
+          42.333333333333340000
           79.375000000000000000
           23.812500000000000000
-          899.583333333333300000)
+          899.583333333333400000)
         Alignment = taRightJustify
         AlignToBand = False
         AutoSize = True
